@@ -1,10 +1,10 @@
-EX-02-Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization
+# EX-02-Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization
 
-AIM:
+ # AIM:
 
 To evaluate and compare the effectiveness of prompting techniques (zero-shot, few-shot, chain-of-thought, role-based) across different AI platforms (e.g., ChatGPT, Gemini, Claude, Copilot) in a specific task: text summarization.
 
-SCENARIO:
+# SCENARIO:
 
 You are part of a content curation team for an educational platform that delivers quick summaries of research papers to undergraduate students. Your task is to summarize a 500-word technical article on "The Basics of Blockchain Technology" using multiple AI platforms and prompting strategies.
 
@@ -20,91 +20,183 @@ Your goal is to determine which combination of prompting technique + platform pr
 
 5.User experience
 
-OUTPUT:
+# OUTPUT:
 
-Scenario 1: Zero-shot Prompting<br>
-prompt 1: Explain gravity in one simple line<br>
-Ans: Gravity is the force that pulls objects toward each other, especially toward the Earth. (ChatGPT)
-Ans: Gravity is the invisible force of attraction that pulls all objects with mass toward one another. (Gemini)
-Ans: Gravity is the force that pulls objects with mass toward each other, which is why things fall to the ground and planets orbit stars. (Claude)
-Ans: Gravity is the invisible force that pulls objects toward each other, keeping planets, stars, and us grounded. (Copilot)
+**THE BASICS OF BLOCK CHAIN TECHNOLOGY**
 
-Scenario 2: Few-shot Prompting
-prompt 2: Example: Car – used for travel
-Example: Phone – used for communication
-Task: Laptop – used for what?
-Ans: Laptop – used for computing and work tasks such as studying, coding, and creating documents. (ChatGPT)
-Ans: Laptop – used for productivity and information. (Gemini)
-Ans: Laptop – used for computing and work. (Claude)
-Ans: Laptop – used for work, study, and entertainment. (Copilot)
+Blockchain technology is a modern digital system used to record and store information in a secure, transparent, and decentralized way. It was first introduced as the underlying technology behind the cryptocurrency Bitcoin, but today it is used in many industries such as finance, healthcare, supply chain management, and digital identity systems. For undergraduate students studying computer science or information technology, understanding the basics of blockchain helps in learning how modern secure digital systems work.
 
-Scenario 3: Chain-of-thought prompting
-prompt 3: Explain step-by-step to find the LCM of 12 and 18
-Ans: 1.Write the prime factors of each number
-* 12 = 2 × 2 × 3 = 2² × 3
-* 18 = 2 × 3 × 3 = 2 × 3²
-2. Take the highest power of each prime factor
-* Highest power of 2 → 2²
-* Highest power of 3 → 3²
-3. Multiply them together
-* LCM = 2² × 3² = 4 × 9 = 36
-LCM of 12 and 18 is 36 (ChatGPT)
-Ans: To find the LCM (Least Common Multiple) of 12 and 18 concisely, use the Listing Multiples method:
-List multiples of 12: 12, 24, 36, 48
-List multiples of 18: 18, 36, 54
-Identify the smallest match: The first number to appear in both lists is 36.
-LCM = 36 (Gemini)
-Ans: Step 1: Find the prime factorization of each number.
-12 = 2 × 2 × 3 = 2² × 3
-18 = 2 × 3 × 3 = 2 × 3²
-Step 2: Identify all prime factors that appear in either number.
-The prime factors are: 2 and 3
-Step 3: For each prime factor, take the highest power that appears in either factorization.
-Highest power of 2: 2² (from 12)
-Highest power of 3: 3² (from 18)
-Step 4: Multiply these highest powers together.
-LCM = 2² × 3² = 4 × 9 = 36
-Answer: The LCM of 12 and 18 is 36. (Claude)
-Ans: Multiples of 12: 12, 24, 36, 48
-Multiples of 18: 18, 36, 54
-First common multiple: 36
-Answer: The LCM of 12 and 18 is 36. (Copilot)
+At its core, a blockchain is a distributed digital ledger. A ledger is simply a record of transactions or data entries. In traditional systems, a ledger is usually maintained by a central authority such as a bank or an organization. However, blockchain works differently because it is decentralized. Instead of being controlled by a single organization, copies of the ledger are stored across multiple computers in a network called nodes. Each node has the same version of the blockchain, which ensures transparency and reduces the risk of data manipulation.
 
-Scenario 4: Role-Based Prompting
-prompt 4: I'm 10th standard school boy. Explain Quantum optics
-Ans: Quantum optics is the study of light at a very small (atomic) level.
-It explains that light is made of tiny energy packets called photons and can behave as both a wave and a particle.
-This concept helps us understand technologies like lasers, optical fibers, and quantum communication. (ChatGPT)
-Ans: 1. Light as "Packets"
-In quantum optics, we don't just see light as a continuous beam. We treat it as being made of tiny, individual packets of energy called photons.
-2. The Core Idea
-It explores how these photons interact with atoms and subatomic particles. Think of it this way:
-Classical Optics: Light is like a flowing river of water.
-Quantum Optics: Light is like a stream of individual water droplets.
-3. Key Concepts to Know
-Quantization: Energy isn't continuous; it comes in specific "chunks."
-Wave-Particle Duality: Light has a "split personality"—it acts as both a wave and a particle depending on how you measure it.
-Photon Interference: Individual photons can interfere with themselves, leading to strange results that classical physics can't explain.
-4. Real-World Uses
-You already use the results of quantum optics every day!
-Lasers: Precise beams of light used in surgery and barcode scanners.
-Fiber Optics: High-speed internet sent via light pulses.
-Quantum Computers: The future of super-fast computing. (Gemini)
-Ans: What is Quantum Optics?
-Quantum optics is the study of light at the smallest possible level - understanding light as tiny packets of energy called photons rather than just waves.
-Key Idea:
-You've learned that light behaves as a wave (like ripples in water). But quantum optics shows that light also behaves as particles (photons) - like tiny balls of energy. This is
-called wave-particle duality.
-Simple Example:
-Think of a dim light bulb. Classical physics says light flows continuously like water from a tap. But quantum optics reveals that the light is actually made of billions of
-individual photons shooting out one by one - so fast you can't see the gaps! (Claude)
-Ans: Quantum optics is the study of light at the quantum level, where light is treated as tiny particles called photons and we explore how they interact with matter.
-Quick Teacher-Style Breakdown 👨‍🏫
-Light as photons: Instead of just waves, light is made of energy packets called photons.
-Photon–matter interaction: Quantum optics looks at how these photons interact with atoms and molecules.
-Applications: Used in lasers, quantum computers, secure communication, and even experiments on entanglement and teleportation.
-Key idea: It connects quantum mechanics with optics, showing how the smallest units of light behave in surprising ways.
+The term “blockchain” comes from the way data is stored. Information is grouped into blocks, and each block contains a list of transactions. Once a block is filled with data, it is linked to the previous block using cryptographic techniques, forming a chain of blocks. Each block contains a hash, which is a unique digital fingerprint generated from the data in that block. The hash of the previous block is also stored in the current block, creating a secure link between them. If someone tries to change the data in one block, its hash will change, which immediately breaks the connection with the next block. This mechanism makes blockchain highly resistant to tampering.
 
-RESULT:
+Another important feature of blockchain technology is consensus mechanisms. Since there is no central authority controlling the system, the network must agree on which transactions are valid. Consensus mechanisms are algorithms used to achieve this agreement among the nodes. One common method is Proof of Work (PoW), where computers solve complex mathematical problems to validate transactions. Another method is Proof of Stake (PoS), where validators are chosen based on the number of tokens they hold and are willing to stake as collateral.
 
-Above are the outputs which is given AI tools according to the following prompts such as zero-shot, few-shot, chain-of-thought and role-based.
+Blockchain also offers several advantages compared to traditional data systems. First, it provides security through cryptography and distributed storage. Second, it ensures transparency, because every transaction recorded on the blockchain can be verified by participants in the network. Third, it improves trust, as users do not need to rely on a central authority to confirm transactions.
+
+Today, blockchain technology is used in many real-world applications. Cryptocurrencies like Bitcoin and Ethereum use blockchain to record financial transactions securely. In supply chain management, blockchain helps track products from manufacturers to consumers, ensuring authenticity and reducing fraud. In healthcare, it can be used to securely store patient records while allowing authorized access to medical professionals.
+
+In conclusion, blockchain technology is an innovative system that provides secure, transparent, and decentralized data management. As industries increasingly adopt digital systems, blockchain is becoming an important technology for ensuring data integrity and trust in modern applications. Understanding its basic concepts helps students appreciate how distributed systems and cryptography work together to create reliable digital infrastructures.
+
+# 1.CHATGPT
+
+**1. Zero-Shot Prompt**
+
+**prompt input**
+
+Summarize the following article about "The Basics of Blockchain Technology" in about 80–100 words suitable for undergraduate students.
+
+
+**output**
+
+Blockchain technology is a decentralized digital ledger used to record transactions securely across a network of computers. Instead of relying on a central authority, data is stored in blocks that are linked together using cryptographic hashes, forming a secure chain. Each participant in the network maintains a copy of the ledger, which improves transparency and prevents data tampering. Consensus mechanisms such as Proof of Work and Proof of Stake help verify transactions. Blockchain is widely used in cryptocurrencies like Bitcoin and Ethereum and has applications in supply chain management, healthcare, and digital identity systems.
+
+**2.Fewshot prompt**
+
+**prompt input**
+
+Example:
+
+Article: Artificial Intelligence is the simulation of human intelligence in machines that are programmed to think and learn.
+
+Summary: Artificial Intelligence allows machines to mimic human thinking and learning abilities.
+
+Example 2:
+
+Article: Cloud computing provides on-demand computing services such as storage, servers, and software through the internet.
+
+Summary: Cloud computing allows users to access computing resources like storage and software online without owning physical hardware.
+
+Now summarize the following article on "The Basics of Blockchain Technology" in a similar short format (80–100 words).
+
+**output**
+
+Blockchain is a decentralized digital ledger that securely records transactions across many computers in a network. Data is stored in blocks that are connected using cryptographic hashes, creating a chain that is difficult to alter. Each computer in the network maintains a copy of the ledger, which increases transparency and reliability. Blockchain systems use consensus mechanisms such as Proof of Work or Proof of Stake to validate transactions. Although it was first used for cryptocurrencies like Bitcoin, blockchain is now applied in areas such as healthcare, supply chain tracking, and digital identity management.
+
+**3.Chain of thought prompt**
+
+**prompt input**
+
+Read the following article about "The Basics of Blockchain Technology".
+
+Step 1: Identify what blockchain technology is.
+Step 2: Explain how blockchain stores and secures data.
+Step 3: Mention the role of consensus mechanisms.
+Step 4: List important applications of blockchain.
+
+After reasoning through these steps, create a clear 100-word summary suitable for undergraduate students.
+
+**output**
+
+
+Blockchain technology is a decentralized system used to securely record digital transactions across multiple computers. Data is organized into blocks that are connected using cryptographic hashes, forming a secure chain that prevents tampering. Since the ledger is distributed across many nodes, it improves transparency and eliminates the need for a central authority. Consensus mechanisms such as Proof of Work and Proof of Stake help verify and validate transactions within the network. Originally developed for cryptocurrencies like Bitcoin, blockchain is now used in areas such as supply chain tracking, healthcare data management, and digital identity systems.
+
+# 2.GEMINI
+
+**1.Zeroshot**
+
+**prompt input**
+
+Based on the text provided about blockchain, summarize the three main reasons why blockchain is considered more secure than traditional centralized ledgers in two sentences.
+
+
+**output**
+
+Blockchain is more secure because it uses a decentralized network of nodes to prevent a single point of failure and employs cryptographic hashing to link blocks, making data tampering easily detectable. Additionally, consensus mechanisms ensure that all participants agree on the validity of transactions without needing a central authority
+
+**2.Fewshot prompt**
+
+**prompt input**
+
+Extract key definitions from the text in the following format:
+
+Term: Ledger
+Definition: A record of transactions or data entries.
+
+Term: Node
+Definition: Individual computers in a network that store copies of the blockchain.
+
+Term: Hash
+Definition:"
+
+
+**output**
+
+Term: Hash
+Definition: A unique digital fingerprint generated from data in a block used to secure and link it to the previous block
+
+**3.Chain of thought prompt**
+
+**prompt input**
+
+Explain what happens to a blockchain if a hacker tries to change a transaction in an old block. Break your answer down step-by-step:
+
+Describe the change to the data.
+
+Describe the effect on the Hash.
+
+Describe the effect on the subsequent blocks.
+
+Conclude with why the network would reject this.
+
+**output**
+
+1. Data Change: The hacker modifies a transaction amount in Block 2 of the chain.
+2. Hash Impact: Because the hash is a unique fingerprint of the data, changing even one character causes the Hash of Block 2 to change entirely.
+3. Chain Reaction: Since Block 3 contains the 'Previous Hash' of Block 2, the link is now broken because the stored hash no longer matches the new hash of Block 2. This invalidates all following blocks.
+4. Conclusion: The rest of the nodes in the network will see that the hashes don't align and will reject the hacker’s version of the ledger in favor of the original, consistent
+
+# 3.PERPLEXITY
+
+**1.Zero shot prompt**
+
+**prompt input**
+
+Rewrite the following text about blockchain for undergraduate CS/IT students. Make it concise, engaging, and structured with headers/lists while keeping key concepts intact:
+
+
+**output**
+
+Consensus like Proof of Work (PoW) or Stake (PoS) validates transactions. Benefits: security, trust without middlemen. Used in crypto (Bitcoin), supply chains, healthcare. Key for modern distributed systems..
+
+**2.Few shot prompt**
+
+**prompt input**
+
+Rewrite texts for undergrad CS/IT students: concise, structured, engaging.
+
+Example 1:
+Input: [Short text on databases]
+Output: **Databases 101** ... [structured rewrite]
+
+Example 2:
+Input: [Short text on networks]
+Output:**Networking Basics** ... [structured rewrite]
+
+
+**output**
+
+A distributed ledger of transaction blocks chained via hashes—change one, break the chain. Decentralized nodes agree via PoW/PoS. Advantages: secure, transparent, trustless. Apps: Bitcoin, supply tracking, patient records.
+
+**3.Chain of thought**
+
+**prompt input**
+
+Rewrite the blockchain text below for CS/IT undergrads. Think step-by-step:
+
+1. Identify core concepts: ledger, decentralization, blocks/hashes, consensus, advantages, uses.
+2. Structure: Intro hook, explanation with analogy, sections for features/advantages/uses, conclusion.
+3. Tone: Friendly, concise (under 400 words), use lists/headers.
+4. Enhance: Add one analogy (e.g., for hashing).
+
+
+**output**
+
+Blockchain: Distributed ledger where nodes store identical blockchains of transactions. Hashes link blocks tamper-proof style. Consensus (PoW/PoS) validates sans central authority. Wins: Security, transparency, trust. Real uses: Crypto, supply chains, health records—vital for secure digital systems.
+
+# comparison for three different platform
+
+<img width="1721" height="1168" alt="ai_model_comparison_table" src="https://github.com/user-attachments/assets/326eac4d-bf41-4d3c-873e-152fecf62bd5" />
+
+# RESULT:
+Thus for comparing all three platform,chatgpt give more appropriate and precise answer.
